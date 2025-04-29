@@ -17,31 +17,31 @@ public class Vtv : MonoBehaviour
         
         if (valorPatente == null)
         {
-            Debug.Log("VTV no aprobada");
+            Debug.Log(" valor de patente incompleto, VTV no aprobada");
             return;
         }
 
         if (valorModelo < 1900 || valorModelo > 2025)
         {
-            Debug.Log("VTV no aprobada");
+            Debug.Log("modelo invalido, VTV no aprobada");
             return;
         }
 
         if (kilometrosRecorridos < 0)
         {
-            Debug.Log("VTV no aprobada");
+            Debug.Log("kilometros invalidos, VTV no aprobada");
             return;
         }
 
         if (vencimientoVtv > 2025 || vencimientoVtv < valorModelo)
         {
-            Debug.Log("VTV no aprobada");
+            Debug.Log("vencimiento invalido, VTV no aprobada");
             return;
         }
 
         if (hcPpm < 5 || hcPpm > 100)
         {
-            Debug.Log("VTV no aprobada");
+            Debug.Log("HC invalido, VTV no aprobada");
             return;
         }
 
